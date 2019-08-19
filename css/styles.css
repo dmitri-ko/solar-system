@@ -2,13 +2,13 @@
 	box-sizing: border-box;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+.page{
   font-style: normal;
   background-color:#000000;
   color: #fff;
 }
 
+/* Блок header */
 .header{
    background-image: url(../images/solar_back.jpg); 
    background-repeat: no-repeat;
@@ -17,37 +17,79 @@ body{
    max-width: 100%;
    height: 800px;
 }
-	
+
+.header_title{
+	padding-top: 256px;
+	padding-bottom: 26px;
+}
+
+/* Вспомогательный блок container */	
 .container{
    max-width: 1200px;
    margin: 0 auto;   
 }	
 
-.header__title{
+/* Блок title */	
+.title{
+	font-family: 'Roboto', sans-serif;
+}	
+	
+.title_h1{
     font-weight: 700;
     font-size: 96px;
-	line-height: 100%;	
-	padding-top: 256px;
-	padding-bottom: 26px;
-	
+	line-height: 100%;
 }
 
+.title_h2{
+	font-weight: 500;
+	font-size: 47px;
+	line-height: 140%;
+	/* identical to box height, or 66px */
+	letter-spacing: 1px;
+}
+
+.title_h3{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height, or 83% */
+	text-transform: capitalize;	
+}
+
+
+/* Блок text */	
+.text{
+	font-family: 'Roboto', sans-serif;
+}	
+
+.text_descriptor{
+	padding-bottom: 20px;
+	font-size: 24px;
+	line-height: 130%;
+}	
+
+.text_main{
+	font-size: 18px;
+	line-height: 130%;
+	/* or 23px */
+}	
+
+/*-----*/
 .header__text{
 	font-size: 23px;
 	line-height: 160%;
 }
 
+/* Блок descriptor */	
 .descriptor{
 	padding-top: 60px;
 }
 
-.descriptor__text{
-	padding-bottom: 20px;
-	font-size: 24px;
-	line-height: 130%;
+.descriptor_info{
 	max-width: 778px;
 }
 
+/* Блок planets */	
 .planets{
 	padding-top: 180px;
 }
@@ -58,12 +100,11 @@ body{
 	margin-right: -411px;
 }
 	
-.planets__title{
-	font-weight: 500;
-	font-size: 47px;
-	line-height: 140%;
-	/* identical to box height, or 66px */
-	letter-spacing: 1px;
+.planets_title{
+	padding-bottom: 20px;
+}
+
+.planets_info-title{
 	padding-bottom: 20px;
 }
 
@@ -71,57 +112,29 @@ body{
 	padding-bottom: 43px;
 }
 
-.planets__info-title{
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 20px;
-	/* identical to box height, or 83% */
-	text-transform: capitalize;	
-	padding-bottom: 20px;
-}
-
-.planets__info-text{
-	font-size: 18px;
-	line-height: 130%;
-	/* or 23px */
+.planets_info{
 	max-width: 436px;
 	padding-right: 56px;
 }
 
+/* Блок small-objects */	
 .small-objects{
 	padding-top: 200px;
 }
-
-.small-objects__title{
-	font-weight: 500;
-	font-size: 47px;
-	line-height: 140%;
-	/* identical to box height, or 66px */
-	letter-spacing: 1px;
-}	
 
 .small-objects__inner{
 	display:flex;	
 }
 
-.small-objects__info-title{
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 20px;
-	/* identical to box height, or 83% */
-	text-transform: capitalize;	
+.small-objects_info-title{
 	padding-top: 80px;
 }	
 
-.small-objects__info-text{
-	font-size: 18px;
-	line-height: 130%;
+.small-objects_info{
 	padding-right: 60px;
 }	
 
-.small-objects__text{
-	font-size: 18px;
-	line-height: 130%;
+.small-objects_text{
 	max-width: 780px;
 }	
 
@@ -129,17 +142,10 @@ body{
 	padding-top: 80px;
 }
 
+/* Блок outside */	
 .outside{
 	padding-top: 200px;
 }
-
-.outside__title{
-	font-weight: 500;
-	font-size: 47px;
-	line-height: 140%;
-	/* identical to box height, or 66px */
-	letter-spacing: 1px;
-}	
 
 .outside__img{
 	padding-top: 60px;
@@ -151,24 +157,15 @@ body{
 	padding-bottom: 70px;
 }
 
-.outside__text{
-	font-size: 18px;
-	line-height: 130%;
-	max-width: 780px;	
+.outside_text{
 	padding-right: 60px;	
 }	
 
+
+/* Блок great-outside */	
 .great-outside{
 	padding-top: 200px;
 }
-
-.great-outside__title{
-	font-weight: 500;
-	font-size: 47px;
-	line-height: 140%;
-	/* identical to box height, or 66px */
-	letter-spacing: 1px;
-}	
 
 .great-outside__img{
 	padding-top: 67px;
@@ -180,9 +177,7 @@ body{
 	justify-content: space-between
 }
 
-.great-outside__text{
-	font-size: 18px;
-	line-height: 130%;
+.great-outside_text{
 	max-width: 570px;	
 }	
 		
