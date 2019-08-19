@@ -4,339 +4,186 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  background-color:#212121;
+  font-style: normal;
+  background-color:#000000;
+  color: #fff;
 }
 
 .header{
-  border-bottom: 1px solid #595959;
+   background-image: url(../images/solar_back.jpg); 
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   max-width: 100%;
+   height: 800px;
 }
 	
 .container{
-   max-width: 1196px;
+   max-width: 1200px;
    margin: 0 auto;   
 }	
 
-.header__inner{
-	display: flex;
-	justify-content: space-between;
-	max-height: 128px;
-	font-size: 19px;
-    line-height: 155%;
-	font-weight: 400;	
-	text-transform: uppercase;
-	color: #fff;
-	padding-top: 50px;
-	padding-bottom: 0px;
-	/*border-bottom: 1px solid #595959; */
-}	
-
-.header__line{
-	margin-right: 20px;
-	margin-left: 20px;
-}	
-
-.header__line img{
-	padding-bottom: 5px;
-}	
-
-.header__frelancer-spec{
-	margin-right: auto;
-}	
-
-.header__main-menu{
-	display: flex;
-	justify-content: space-between;
-	margin: 0;
-    text-align: right;    
+.header__title{
+    font-weight: 700;
+    font-size: 96px;
+	line-height: 100%;	
+	padding-top: 256px;
+	padding-bottom: 26px;
+	
 }
 
-.header__menu-item{
-	list-style-type: none;
-	padding-left: 24px;
-}
-
-.header__menu-item:first-child{
-	padding-left: 0px;
-}
-
-.header__menu-item a{
-	color: #fff;
-    text-decoration: none;  	
-}
-
-.header__menu-item a:hover{
-	border-bottom: 1px solid #fff;
-	padding-bottom: 50px
-}
-
-.header__menu-item_active{
-	border-bottom: 1px solid #fff;
-	padding-bottom: 50px
-}
-
-.freelancer-info{
-	border-bottom: 1px solid #595959;
-}
-
-.freelancer-info__picture{
-	width:50%;
-}
-
-.freelancer-info__picture img {
-  opacity: 0.7;
-  filter: alpha(opacity=70); /* For IE8 and earlier */
-}
-
-.freelancer-info__inner{
-	padding-top: 124px;
-	padding-bottom: 145px;
-	display: flex;
-	justify-content: space-between;
-	color: #fff;
-}
-
-.freelancer-info__description{
-	padding-left: 52px;
-	padding-top: 34px;
-	width:50%;
-}
-
-.freelancer-info__header{
-	font-weight: 500;
-	font-size: 44px;
-	line-height: 108.41%;
-	width: 100%;
-	padding-bottom: 45px;
-}
-
-.freelancer-info__details{
-	font-size: 22px;
-	line-height: 155%;
-	font-weight: 400;
-	padding-bottom: 45px;
-}
-
-.freelancer-info__contacts{
-	display: flex;
-	justify-content: space-between;
-}
-
-.freelancer-info__contacts a{
-	text-decoration: none;
-	color: #fff;
+.header__text{
 	font-size: 23px;
-	line-height: 108.41%;
-	font-weight: 700;
+	line-height: 160%;
 }
 
-.projects{
-	border-bottom: 1px solid #595959;
-	padding-bottom: 100px;
+.descriptor{
+	padding-top: 60px;
 }
 
-.projects__inner{
-	color: #fff;
+.descriptor__text{
+	padding-bottom: 20px;
+	font-size: 24px;
+	line-height: 130%;
+	max-width: 778px;
 }
 
-.projects__header{
-	padding-top: 92px;
-	padding-bottom: 100px;
-	font-size: 33px;
-	line-height: 153%;
-	font-weight: 400;
-	text-transform: uppercase;
+.planets{
+	padding-top: 180px;
 }
 
-
-.portfolio a{
-	color: #fff;
-	text-decoration: none;
-	width: 50%;
-	padding-left: 52px;
-}
-
-.portfolio a:first-child{
-	color: #fff;
-	text-decoration: none;
-	width: 50%;
-	padding-left: 0;
-	padding-right: 52px;
-}
-
-.portfolio__inner{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 120px;
-	width: 100%;
-}
-
-.portfolio__box{
-	max-width: 570px;
-}
-
-.portfolio__image{
+.planets__inner{
 	display:flex;
-	justify-content: center;
-}
-
-.portfolio__image img{
-	width:  464px;
-    height: 587px;
-}
-
-.portfolio__header{
-	font-weight: 700;
-	font-size:    22px;
-	line-height: 108.41%;    
-	margin-bottom: 12px;
-	margin-left: 35px;
-}
-
-.portfolio__description{
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 141%;
-	padding-bottom: 28px;
-	margin-left: 35px;
-}
-
-.portfolio__box_theme_lightblue{
-	background-color: #49C2DD;
-}
-
-.portfolio__box_theme_blue{
-	background-color: #1833BF;
-}
-
-.portfolio__box_theme_yellow{
-	background-color: #E7D95B;
-}
-
-.portfolio__box_theme_orange{
-	background-color: #D04B00;
-}
-
-.services{
-	border-bottom: 1px solid #595959;
-	padding-bottom: 200px;
-}
-
-.services__inner{
-	color: #fff;
-	display: flex;
 	justify-content: space-between;
-}
-
-.services__header{
-	padding-top: 92px;
-	padding-left: 51px;
-	/*padding-bottom: 100px;*/
-	font-size: 33px;
-	line-height: 153%;
-	font-weight: 400;
-	text-transform: uppercase;
-	width: 50%;
-}
-
-.services__box{
-	display: flex;
-	justify-content: space-between;
-	padding-top: 115px;
-	padding-left: 52px;
-	width: 50%;
-}
-
-.services__block{
-	font-size: 18px;
-    line-height: 25px;
-	font-weight: 400;
-	padding: 0; 
-}	
-
-.services__block li{
-    list-style-type: none;   	
-	margin-bottom: 20px;
-}	
-
-.process{
-	padding-bottom: 164px;
-}
-
-.process__inner{
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-}
-
-.process__header{
-	padding-top: 92px;
-	padding-left: 51px;
-	/*padding-bottom: 100px;*/
-	font-size: 33px;
-	line-height: 153%;
-	font-weight: 400;
-	text-transform: uppercase;
-	width: 50%;
-}
-
-.process__box{
-	width: 50%;
-	padding-left: 52px;
+	margin-right: -411px;
 }
 	
-.process__description{
-	padding-top: 92px;
-	padding-bottom: 80px;
-	font-weight: 400;
-	font-size: 25px;
-	line-height: 38px;
+.planets__title{
+	font-weight: 500;
+	font-size: 47px;
+	line-height: 140%;
+	/* identical to box height, or 66px */
+	letter-spacing: 1px;
+	padding-bottom: 20px;
 }
 
-.process__step{
-	padding-bottom: 70px;
+.planets__img{
+	padding-bottom: 43px;
+}
+
+.planets__info-title{
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height, or 83% */
+	text-transform: capitalize;	
+	padding-bottom: 20px;
+}
+
+.planets__info-text{
+	font-size: 18px;
+	line-height: 130%;
+	/* or 23px */
+	max-width: 436px;
+	padding-right: 56px;
+}
+
+.small-objects{
+	padding-top: 200px;
+}
+
+.small-objects__title{
+	font-weight: 500;
+	font-size: 47px;
+	line-height: 140%;
+	/* identical to box height, or 66px */
+	letter-spacing: 1px;
 }	
 
-.process__step-header{
+.small-objects__inner{
+	display:flex;	
+}
+
+.small-objects__info-title{
 	font-weight: 700;
-	font-size: 22px;
-	line-height: 199%;
-	margin-bottom: 18px;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height, or 83% */
+	text-transform: capitalize;	
+	padding-top: 80px;
 }	
 
-.process__step-details{
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 146%;
+.small-objects__info-text{
+	font-size: 18px;
+	line-height: 130%;
+	padding-right: 60px;
 }	
 
-.footer{
-	background-color:#1D1D1D;
-	display: flex;
-	justify-content: center;
+.small-objects__text{
+	font-size: 18px;
+	line-height: 130%;
+	max-width: 780px;
+}	
+
+.small-objects__img{
+	padding-top: 80px;
 }
 
-.footer__inner{
-	color:#fff;
-	max-width: 560px;
+.outside{
+	padding-top: 200px;
 }
 
-.footer__email{
-	padding-top: 178px;
-	padding-bottom: 109px;
-	font-weight: 700;
-	font-size: 61px;
-	line-height: 108%;
+.outside__title{
+	font-weight: 500;
+	font-size: 47px;
+	line-height: 140%;
+	/* identical to box height, or 66px */
+	letter-spacing: 1px;
+}	
+
+.outside__img{
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
-.footer__social-media-item{
-	font-weight: 700;
-	font-size: 23px;
-	line-height: 108%;
-	padding-left: 48px;
-}
-
-.footer__social-media{
+.outside__inner{
 	display:flex;
-	justify-content: center;
-	padding-bottom: 178px;
+	padding-bottom: 70px;
 }
+
+.outside__text{
+	font-size: 18px;
+	line-height: 130%;
+	max-width: 780px;	
+	padding-right: 60px;	
+}	
+
+.great-outside{
+	padding-top: 200px;
+}
+
+.great-outside__title{
+	font-weight: 500;
+	font-size: 47px;
+	line-height: 140%;
+	/* identical to box height, or 66px */
+	letter-spacing: 1px;
+}	
+
+.great-outside__img{
+	padding-top: 67px;
+}
+
+.great-outside__inner{
+	display:flex;
+	padding-bottom: 70px;
+	justify-content: space-between
+}
+
+.great-outside__text{
+	font-size: 18px;
+	line-height: 130%;
+	max-width: 570px;	
+}	
+		
+	
